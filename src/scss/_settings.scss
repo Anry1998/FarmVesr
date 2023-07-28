@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+
+}
+
+body {
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 280px;
+  min-height: 100%;
+  font-size: 16px;
+  background-color: var(--light-color);
+
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container-head {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width-head);
+}
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.header-container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+
+.btn {
+  padding:  20px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: var(--grey-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  &--white {
+    border: 1px solid var(--grey-color);
+    margin-right: 16px;
+    padding:  20px 42px;
+  }
+
+  &--green {
+    color: #fff;
+    background: var(--green-color);
+    border: 1px solid var(--green-color);
+  }
+}
+
+
+.howWorks__content__top {
+
+  .howWorks__content__top__title {
+    color: var(--grey-color);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+
+    span {
+      color: var(--green-color);
+    }
+  }
+
+  .invest__sabtitle {
+    padding-top: 20px;
+    text-align: left;
+  }
+
+}
+
+.accordion__content {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden; /* важная штука, если его не задать то скрытый блок не обрежится и мышка будет клацать не правильно */
+	padding: 0 0;
+	transition: all var(--accordion-time) ease-out;
+	box-sizing: content-box;
+}
+
+.is-open .accordion__icon {
+  display: inline-block;
+  transform: translate(250px, -10px) rotate(180deg);
+
+
+
+}
+
+.is-open .rotate {
+
+
+}
+/*  добавляем класс .is-open объекту '.accordion-1', при этом он действует только на .accordion__icon*/
+
+.is-open .accordion__content {
+	opacity: 1;
+
+
+}
+/* аналогично */
+
+
+.animations {
+
+}
+.Ellipse122, .Ellipse123 {
+  width: 585px;
+  height: 585px;
+  border-radius: 585px;
+  border: 1px solid var(--green-color-animation);
+  fill: none;
+
+
+}
+
+.display__none {
+  display: none;
+}
+

@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/invest";
+@import "./components/howWorks";
+@import "./components/pathway";
+@import "./components/choose";
+
+
+@import "./components/footer";
+
+
+// тестовые стили, удалите их
+.page__body {
+
+}

@@ -1,0 +1,81 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+.page {
+  // base
+  --font-family: 'League Spartan', sans-serif;
+  --content-width-header: 1620px;
+  --content-width: 1420px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-head: calc(var(--content-width-header) + (var(--container-offset) * 2));
+
+  // colors
+
+    // --light-color: rgb(226, 35, 35);
+    // --grey-color: #22a8eb;
+    --green-color: #23B123;
+
+
+
+
+}
+
+.light-theme {
+  --light-color: #fff;
+  --grey-color: #263238;
+  --color-input: rgba(38, 50, 56, 0.10);
+  --green-color: #23B123;
+  --green-color-animation: #23B123;
+
+  --color-star1: rgba(38, 50, 56, 0.40);
+
+  // --color-star2: #263238;
+  --green-color-img: rgba(0, 128, 0, 0.10);
+  --color-svg: #008000;
+
+  --color-background: rgba(0, 128, 0, 0.05);
+  --color-background-nun: #008000;
+  --color-background-choose: rgba(0, 128, 0, 0.10);
+
+
+  --circle-svg--fill: #fff;
+  --circle-svg--background: #008000;
+
+  --footer-background: rgba(242, 248, 242, 0.50);
+  --footer-line: rgba(38, 50, 56, 0.31);
+
+  --circle-footer-line: rgba(38, 50, 56, 0.31);;
+
+
+
+
+
+
+
+}
+
+.dark-theme {
+  --light-color: #263238;
+  --grey-color: #fff;
+  --color-input: #fff;
+  --green-color: #23B123;
+  --green-color-animation: #fff;
+
+  --color-star1: #FFF;
+
+
+  --green-color-img: rgba(0, 128, 0, 0.10);
+  --color-svg: #23B123;
+
+  --color-background: rgba(255, 255, 255, 0.05);
+  --color-background-nun: #FFFFFF;
+  --color-background-choose: rgba(255, 255, 255, 0.05);
+
+  --circle-svg--fill: #23B123;
+  --circle-svg--background: white;
+
+  --footer-background: rgba(53, 64, 70, 0.50);
+  --circle-footer-line: rgba(255, 255, 255, 0.42);
+
+
+}
